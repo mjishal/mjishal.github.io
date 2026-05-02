@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohammed Jishal — AI & Backend Developer, CS student building intelligent systems">
+  <meta property="og:title" content="Mohammed Jishal · AI & Backend Developer">
+  <meta property="og:description" content="CS student & builder. I craft intelligent systems, automate the boring stuff, and ship full-stack solutions.">
+  <title>Mohammed Jishal · AI & Backend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-name" id="ld-name"></div>
+  <div class="ld-bar-bg"><div class="ld-bar"></div></div>
+  <div class="ld-pct" id="ld-pct">0%</div>
+</div>
+
+<!-- SCANLINES -->
+<div class="scanlines"></div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- CANVAS -->
+<canvas id="bgc"></canvas>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav id="nav">
+  <a class="nav-logo" href="#hero">MJ<em>.dev</em></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-res" href="https://jishal.vercel.app/assets/resume/Mohammed_Jishal_Resume.pdf" target="_blank">Resume ↗</a>
+  <div class="nav-hbg" id="hbg">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mob-menu" id="mmenu">
+  <a href="#about"     class="ml">About</a>
+  <a href="#skills"    class="ml">Skills</a>
+  <a href="#projects"  class="ml">Projects</a>
+  <a href="#education" class="ml">Education</a>
+  <a href="#contact"   class="ml">Contact</a>
+  <a href="https://jishal.vercel.app/assets/resume/Mohammed_Jishal_Resume.pdf" target="_blank">Resume ↗</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-bg-glow2"></div>
+
+  <div class="hero-inner">
+    <p class="h-greet">// Hi there, I'm</p>
+    <h1 class="h-name">
+      <span class="ln1">Mohammed</span>
+      <span class="ln2"><span class="glitch" data-g="Jishal">Jishal</span></span>
+    </h1>
+    <div class="h-role"><span id="typed"></span></div>
+    <p class="h-desc">
+      CS student &amp; builder — I craft intelligent systems, automate the boring stuff,
+      and ship full-stack solutions from local AI agents to cloud deployments.
+    </p>
+    <div class="h-ctas">
+      <a href="#projects" class="btn-p"><i class="fas fa-code"></i> View Projects</a>
+      <a href="#contact"  class="btn-s"><i class="fas fa-arrow-right"></i> Let's Talk</a>
+    </div>
+  </div>
+
+  <div class="h-social">
+    <a href="https://github.com/jishal919" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/mohammed-jishal-66879931a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:mohammedjishal.jasmin@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <div class="hb1">
+    <span class="dot-live"></span>
+    Building IPEM · AI Dev
+  </div>
+  <div class="hb2">🤖 Ollama · n8n · Node.js</div>
+
+  <div class="h-scroll"><div class="h-scroll-line"></div>Scroll</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about">
+  <div class="ctr">
+    <div class="about-g">
+      <div class="about-visual rev">
+        <div class="av-frame">
+          <div class="av-photo-shell">
+            <img src="assets/images/profile.jpg" alt="Mohammed Jishal" class="av-photo" loading="lazy" decoding="async">
+          </div>
+          <div class="av-ring"></div>
+        </div>
+        <div class="a-stats">
+          <div class="a-stat"><span class="a-stat-n" data-count="6">0</span><span class="a-stat-l">Yrs Coding</span></div>
+          <div class="a-stat"><span class="a-stat-n" data-count="10">0</span><span class="a-stat-l">Projects</span></div>
+          <div class="a-stat"><span class="a-stat-n" data-count="15">0</span><span class="a-stat-l">Tech Stack</span></div>
+        </div>
+      </div>
+
+      <div class="about-text rev" style="transition-delay:.15s">
+        <div class="s-label">About Me</div>
+        <h2 class="s-title">Building things<br>that <span>actually work</span></h2>
+        <p>I'm a <strong>Computer Science &amp; Data Science</strong> student at UKF College of Engineering, Kerala. Started coding in 8th grade and never really stopped — went from making games to building full AI-powered backend systems.</p>
+        <p>Currently obsessed with <strong>LLMs, local AI, and workflow automation</strong>. I design and build end-to-end systems from architecture to deployment. Freelancing since high school taught me that shipping fast and shipping smart both matter.</p>
+        <div class="a-chips">
+          <span class="a-chip">AI / LLM Integration</span>
+          <span class="a-chip">Backend Development</span>
+          <span class="a-chip">Automation</span>
+          <span class="a-chip">Data Science</span>
+          <span class="a-chip">Freelancing</span>
+          <span class="a-chip">Open Source</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+  <div class="ctr">
+    <div class="s-label rev">Tech Stack</div>
+    <h2 class="s-title rev">What I work <span>with</span></h2>
+
+    <div class="sk-grid">
+      <div class="sk-cat rev">
+        <div class="sk-title"><i class="fas fa-code"></i> Languages</div>
+        <div class="sk-chips">
+          <span class="sk-chip">Python</span><span class="sk-chip">JavaScript</span>
+          <span class="sk-chip">Node.js</span><span class="sk-chip">C</span>
+          <span class="sk-chip">C++</span><span class="sk-chip">Java</span>
+          <span class="sk-chip">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="sk-cat rev" style="transition-delay:.08s">
+        <div class="sk-title"><i class="fas fa-database"></i> Databases</div>
+        <div class="sk-chips">
+          <span class="sk-chip">MySQL</span><span class="sk-chip">PostgreSQL</span>
+          <span class="sk-chip">MongoDB</span><span class="sk-chip">SQLite</span>
+        </div>
+      </div>
+      <div class="sk-cat rev" style="transition-delay:.16s">
+        <div class="sk-title"><i class="fas fa-layer-group"></i> Frameworks</div>
+        <div class="sk-chips">
+          <span class="sk-chip">Express.js</span><span class="sk-chip">Flask</span>
+          <span class="sk-chip">Django</span><span class="sk-chip">FastAPI</span>
+          <span class="sk-chip">TensorFlow</span><span class="sk-chip">PyTorch</span>
+        </div>
+      </div>
+      <div class="sk-cat rev" style="transition-delay:.24s">
+        <div class="sk-title"><i class="fas fa-robot"></i> AI &amp; LLMs</div>
+        <div class="sk-chips">
+          <span class="sk-chip">OpenAI API</span><span class="sk-chip">Ollama</span>
+          <span class="sk-chip">Groq</span><span class="sk-chip">Grok</span>
+          <span class="sk-chip">Hugging Face</span><span class="sk-chip">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="sk-cat rev" style="transition-delay:.32s">
+        <div class="sk-title"><i class="fas fa-tools"></i> Tools &amp; DevOps</div>
+        <div class="sk-chips">
+          <span class="sk-chip">Git</span><span class="sk-chip">Docker</span>
+          <span class="sk-chip">AWS</span><span class="sk-chip">Vercel</span>
+          <span class="sk-chip">n8n</span><span class="sk-chip">Postman</span>
+        </div>
+      </div>
+      <div class="sk-cat rev" style="transition-delay:.4s">
+        <div class="sk-title"><i class="fas fa-chart-bar"></i> Data Science</div>
+        <div class="sk-chips">
+          <span class="sk-chip">NumPy</span><span class="sk-chip">Pandas</span>
+          <span class="sk-chip">Matplotlib</span><span class="sk-chip">OpenCV</span>
+          <span class="sk-chip">BeautifulSoup</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrolling marquee -->
+  <div class="marquee-wrap" style="margin-top:52px">
+    <div class="marquee-track">
+      <div class="mq-item"><i class="fab fa-python"></i>Python</div>
+      <div class="mq-item"><i class="fab fa-js-square"></i>JavaScript</div>
+      <div class="mq-item"><i class="fab fa-node-js"></i>Node.js</div>
+      <div class="mq-item"><i class="fas fa-fire"></i>Flask</div>
+      <div class="mq-item"><i class="fas fa-database"></i>MySQL</div>
+      <div class="mq-item"><i class="fab fa-docker"></i>Docker</div>
+      <div class="mq-item"><i class="fab fa-aws"></i>AWS</div>
+      <div class="mq-item"><i class="fab fa-git-alt"></i>Git</div>
+      <div class="mq-item"><i class="fas fa-robot"></i>Ollama</div>
+      <div class="mq-item"><i class="fas fa-project-diagram"></i>n8n</div>
+      <div class="mq-item"><i class="fas fa-brain"></i>TensorFlow</div>
+      <div class="mq-item"><i class="fas fa-leaf"></i>MongoDB</div>
+      <div class="mq-item"><i class="fas fa-microchip"></i>PyTorch</div>
+      <!-- dupe for infinite -->
+      <div class="mq-item"><i class="fab fa-python"></i>Python</div>
+      <div class="mq-item"><i class="fab fa-js-square"></i>JavaScript</div>
+      <div class="mq-item"><i class="fab fa-node-js"></i>Node.js</div>
+      <div class="mq-item"><i class="fas fa-fire"></i>Flask</div>
+      <div class="mq-item"><i class="fas fa-database"></i>MySQL</div>
+      <div class="mq-item"><i class="fab fa-docker"></i>Docker</div>
+      <div class="mq-item"><i class="fab fa-aws"></i>AWS</div>
+      <div class="mq-item"><i class="fab fa-git-alt"></i>Git</div>
+      <div class="mq-item"><i class="fas fa-robot"></i>Ollama</div>
+      <div class="mq-item"><i class="fas fa-project-diagram"></i>n8n</div>
+      <div class="mq-item"><i class="fas fa-brain"></i>TensorFlow</div>
+      <div class="mq-item"><i class="fas fa-leaf"></i>MongoDB</div>
+      <div class="mq-item"><i class="fas fa-microchip"></i>PyTorch</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+  <div class="ctr">
+    <div class="s-label rev">My Work</div>
+    <h2 class="s-title rev">Things I've <span>built</span></h2>
+
+    <div class="proj-grid">
+
+      <!-- IPEM — FEATURED -->
+      <div class="proj-card feat rev">
+        <div class="proj-hdr">
+          <div class="proj-ico" style="background:var(--sec-dim);border-color:rgba(189,147,249,.22);color:var(--secondary)">
+            <i class="fas fa-robot"></i>
+          </div>
+          <span class="feat-badge">Featured</span>
+        </div>
+        <h3 class="proj-name" style="font-size:clamp(1.3rem,2.5vw,1.9rem)">
+          IPEM — Intelligent Program<br>Environment Maintainer
+        </h3>
+        <p class="proj-desc">
+          A local, privacy-first AI coding assistant. Built with an
+          <strong>n8n workflow orchestration</strong> layer,
+          <strong>locally-running Ollama models</strong>, and a custom
+          <strong>Node.js execution agent</strong> — IPEM understands your codebase,
+          writes and runs code, and maintains full project context across sessions.
+          No data leaves your machine.
+        </p>
+        <div class="ipem-arch">
+          <div class="ipem-node">
+            <i class="fas fa-project-diagram"></i>
+            <span>n8n Orchestration</span>
+          </div>
+          <div class="ipem-node">
+            <i class="fas fa-microchip"></i>
+            <span>Ollama (Local LLM)</span>
+          </div>
+          <div class="ipem-node">
+            <i class="fab fa-node-js"></i>
+            <span>Node.js Agent</span>
+          </div>
+        </div>
+        <div class="proj-tags" style="margin-top:20px">
+          <span class="tag p">n8n</span>
+          <span class="tag p">Ollama</span>
+          <span class="tag p">Node.js</span>
+          <span class="tag">LLM</span>
+          <span class="tag">Local AI</span>
+          <span class="tag">Code Agent</span>
+          <span class="tag">Automation</span>
+        </div>
+        <a href="https://ipem-web.vercel.app/" target="_blank" rel="noopener" class="proj-view">
+          <span>View Project</span><i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <!-- Music Player -->
+      <div class="proj-card rev" style="transition-delay:.1s">
+        <div class="proj-hdr">
+          <div class="proj-ico"><i class="fas fa-music"></i></div>
+          <div class="proj-acts">
+            <a href="https://github.com/jishal919/musicplayer" target="_blank" class="proj-lnk"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="proj-name">Terminal Music Player</h3>
+        <p class="proj-desc">Terminal-aesthetic music streaming web app. Stream via direct URLs, manage a song library, responsive UI. Deployed on Vercel.</p>
+        <div class="proj-tags">
+          <span class="tag p">Flask</span>
+          <span class="tag p">Python</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Dropbox API</span>
+          <span class="tag">Vercel</span>
+        </div>
+        <a href="https://terminal-cloud.vercel.app/" target="_blank" rel="noopener" class="proj-view">
+          <span>View Project</span><i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+      <!-- Attendance -->
+      <div class="proj-card rev" style="transition-delay:.2s">
+        <div class="proj-hdr">
+          <div class="proj-ico" style="background:rgba(241,250,140,.08);border-color:rgba(241,250,140,.18);color:var(--gold)">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <div class="proj-acts">
+            <a href="https://github.com/jishal919/StudenAttendanceSystem_DBMS_Project" target="_blank" class="proj-lnk"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="proj-name">Student Attendance System</h3>
+        <p class="proj-desc">Full-stack attendance management with Flask + MySQL. CRUD ops, reporting dashboard, session handling. Academic mini-project.</p>
+        <div class="proj-tags">
+          <span class="tag g">Flask</span>
+          <span class="tag g">MySQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">HTML/CSS</span>
+        </div>
+        <a href="https://github.com/jishal919/StudenAttendanceSystem_DBMS_Project" target="_blank" rel="noopener" class="proj-view">
+          <span>View Project</span><i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ EDUCATION ═══ -->
+<section id="education">
+  <div class="ctr">
+    <div class="s-label rev">Background</div>
+    <h2 class="s-title rev">Education &amp;<br><span>Journey</span></h2>
+    <div class="timeline rev">
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--secondary);box-shadow:0 0 14px var(--secondary)"></div>
+        <div class="tl-yr">2019 — Present</div>
+        <div class="tl-card">
+          <div class="tl-title" style="color:var(--secondary)">Self-Taught Developer</div>
+          <div class="tl-sub" style="color:var(--secondary)">Started in 8th grade · Never stopped</div>
+          <div class="tl-desc">Python → web dev → game dev → mobile apps → backend systems → AI/LLM integration. Freelancing since high school — building real products for real clients.</div>
+          <span class="tl-badge">Builder · Freelancer · Explorer</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-yr">2024 — 2028</div>
+        <div class="tl-card">
+          <div class="tl-title">B.Tech — Computer Science &amp; Engineering</div>
+          <div class="tl-sub">UKF College of Engineering and Technology, Kerala</div>
+          <div class="tl-desc">Specialization in Data Science. Covers DBMS, Computer Architecture, Algorithms, AI/ML, Software Engineering, and more.</div>
+          <span class="tl-badge">Data Science Specialization</span>
+        </div>
+      </div>
+      <div class="tl-item" style="padding-bottom:0">
+        <div class="tl-dot" style="background:var(--gold);box-shadow:0 0 14px var(--gold)"></div>
+        <div class="tl-yr">June 10, 2025 — July 10, 2025</div>
+        <div class="tl-card">
+          <div class="tl-title">Internship — AI Team</div>
+          <div class="tl-sub">Software Incubator Pvt. Ltd. · Trivandrum</div>
+          <ul class="tl-list">
+            <li>Processed and optimized large datasets using Pandas and NumPy</li>
+            <li>Extracted structured data from images and built processing pipelines</li>
+            <li>Developed automated web scraping and browser automation workflows</li>
+            <li>Integrated and deployed LLMs for real-time AI-driven automation</li>
+            <li>Worked with MySQL and SQLite3 for data management</li>
+            <li>Applied prompt engineering techniques for LLM-based tasks</li>
+            <li>Built solutions using AI APIs and automation tools</li>
+          </ul>
+          <button type="button" class="cert-preview" data-cert-open>
+            <img src="assets/images/internship-certificate.jpg" alt="Internship certificate preview" loading="lazy">
+            <span><i class="fas fa-award"></i> View Certificate</span>
+          </button>
+          <span class="tl-badge">AI Internship · Certificate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cert-modal" id="cert-modal" aria-hidden="true">
+  <div class="cert-backdrop" data-cert-close></div>
+  <div class="cert-dialog" role="dialog" aria-modal="true" aria-labelledby="cert-title">
+    <button type="button" class="cert-close" data-cert-close aria-label="Close certificate preview">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="cert-title" id="cert-title">Internship Certificate</div>
+    <img src="assets/images/internship-certificate.jpg" alt="Internship certificate from Software Incubator Pvt. Ltd." loading="lazy">
+    <div class="cert-fallback">Certificate image will appear here after `assets/images/internship-certificate.jpg` is added.</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="ctr">
+    <div class="s-label rev">Get In Touch</div>
+    <h2 class="s-title rev">Let's build something<br><span>together</span></h2>
+    <div class="ct-grid">
+      <div class="ct-info rev">
+        <p>I'm always open to new opportunities, collaborations, and interesting projects. Whether you want to work together or just say hi — drop me a message.</p>
+        <div class="ct-links">
+          <a href="mailto:mohammedjishal.jasmin@gmail.com" class="ct-lnk">
+            <div class="ct-ico"><i class="fas fa-envelope"></i></div>
+            <div class="ct-txt">
+              <span>Email</span>
+              <span>mohammedjishal.jasmin@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right ct-arr"></i>
+          </a>
+          <a href="https://github.com/jishal919" target="_blank" class="ct-lnk">
+            <div class="ct-ico"><i class="fab fa-github"></i></div>
+            <div class="ct-txt">
+              <span>GitHub</span>
+              <span>github.com/jishal919</span>
+            </div>
+            <i class="fas fa-arrow-right ct-arr"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mohammed-jishal-66879931a/" target="_blank" class="ct-lnk">
+            <div class="ct-ico" style="background:rgba(10,102,194,.18);color:#4f9cf9"><i class="fab fa-linkedin"></i></div>
+            <div class="ct-txt">
+              <span>LinkedIn</span>
+              <span>mohammed-jishal-66879931a</span>
+            </div>
+            <i class="fas fa-arrow-right ct-arr"></i>
+          </a>
+          <a href="https://jishal.vercel.app" target="_blank" class="ct-lnk">
+            <div class="ct-ico" style="background:rgba(255,255,255,.06);color:var(--muted)"><i class="fas fa-globe"></i></div>
+            <div class="ct-txt">
+              <span>Previous Portfolio</span>
+              <span>jishal.vercel.app</span>
+            </div>
+            <i class="fas fa-arrow-right ct-arr"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ct-form rev" style="transition-delay:.15s">
+        <div class="ct-form-title">Send a Message</div>
+        <div class="fg"><label>Your Name</label><input type="text" id="fn" placeholder="John Doe"></div>
+        <div class="fg"><label>Email / Phone (Optional)</label><input type="text" id="fe" placeholder="john@example.com"></div>
+        <div class="fg"><label>Message</label><textarea id="fm" placeholder="What's on your mind?"></textarea></div>
+        <button class="ct-submit" onclick="sendMsg()"><span>Send Message →</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed &amp; Built by <a href="#hero">Mohammed Jishal</a> · 2026</p>
+  <div class="ft-links">
+    <a href="https://github.com/jishal919" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/mohammed-jishal-66879931a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:mohammedjishal.jasmin@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://jishal.vercel.app" target="_blank" title="Old Portfolio"><i class="fas fa-external-link-alt"></i></a>
+  </div>
+</footer>
+
+<!-- ═══ SCRIPTS ═══ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
