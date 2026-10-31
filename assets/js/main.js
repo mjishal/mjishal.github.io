@@ -1,7 +1,7 @@
 ﻿/* ── LOADER ── */
 const ldName = document.getElementById('ld-name');
 const ldPct  = document.getElementById('ld-pct');
-const TITLE  = 'JISHAL.DEV';
+const TITLE  = 'Mohammed Jishal';
 let li = 0;
 const lt = setInterval(() => {
   if (li < TITLE.length) {
